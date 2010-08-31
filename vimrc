@@ -32,6 +32,10 @@ let g:netrw_altv = 1
 " netrw vertical split window size
 let g:netrw_winsize = 150
 
+" Dont do backups when editing tmpfiles
+" Useful for crontab -e
+set backupskip=/tmp/*,/private/tmp/*" 
+
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish

@@ -32,3 +32,5 @@ function desym
 {
     /Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKit.framework/Versions/A/Resources/symbolicatecrash -A -v $1 | more
 }
+
+alias myip='curl www.whatismyip.com/automation/n09230945.asp'

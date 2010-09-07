@@ -8,9 +8,10 @@
   excludesfile = <%= ENV['HOME'] %>/.gitignore
   editor = mvim 
 [color]
-  diff = auto
-  branch = auto
   status = auto
+  branch = auto
+  interactive = auto
+  diff = auto
 [alias]
   co = checkout
   st = status
@@ -24,3 +25,10 @@
   lm = log master..
   llm = log -p master..
   b = branch
+  pl = pull
+  ps = push
+  staged = diff --cached
+  unstaged = diff
+  both = diff HEAD
+  oneline = log --pretty=oneline
+  amend = commit --amend

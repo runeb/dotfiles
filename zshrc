@@ -18,7 +18,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/sbin:/usr/local/share/npm/bin
 export PYTHONPATH=/usr/local/lib/python2.6/site-packages
 
 # Load RVM

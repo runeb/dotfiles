@@ -32,3 +32,9 @@ function desym
 {
     /Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKit.framework/Versions/A/Resources/symbolicatecrash -A -v $1 | more
 }
+
+export JSTESTDRIVER_HOME="${HOME}/bin/"
+
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node
+export EDITOR="mvim -f"
+

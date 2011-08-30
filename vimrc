@@ -94,3 +94,9 @@ else
 
 endif " has("autocmd")
 
+" Folding
+set foldmethod=syntax
+set foldcolumn=1
+" Abbreviations
+iab me Rune Botten <rbotten@gmail.com>
+

@@ -38,3 +38,8 @@ export JSTESTDRIVER_HOME="${HOME}/bin/"
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node:/usr/local/lib/node_modules
 export EDITOR="mvim -f"
 
+# Aliases
+alias be="bundle exec"
+alias ber="bundle exec rspec"
+alias berd="bundle exec rspec --drb"
+

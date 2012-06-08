@@ -95,8 +95,17 @@ else
 endif " has("autocmd")
 
 " Folding
-set foldmethod=syntax
+"set foldmethod=syntax
 "set foldcolumn=1
+"set foldlevel=20
+
 " Abbreviations
-iab me Rune Botten <rbotten@gmail.com>
+iab <me> Rune Botten <rbotten@gmail.com>
+
+" Use node for JS commands (jslint)
+let $JS_CMD="jslintopts"
+
+" Moving up and down doesnt care about wrapped lines
+noremap j gj
+noremap k gk
 

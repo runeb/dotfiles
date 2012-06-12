@@ -21,9 +21,6 @@ unsetopt auto_name_dirs
 export PATH=~/bin:/opt/local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
 export PYTHONPATH=/usr/local/lib/python2.6/site-packages
 
-# Load RVM
-if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
-
 # RVM prompt
 PS1="\$(~/.rvm/bin/rvm-prompt) $PS1"
 
@@ -43,3 +40,7 @@ alias be="bundle exec"
 alias ber="bundle exec rspec"
 alias berd="bundle exec rspec --drb"
 
+figlet -w`tput cols` `hostname`|lolcat
+uptime|lolcat
+fortune|cowsay|lolcat
+echo

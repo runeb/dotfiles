@@ -1,0 +1,10 @@
+#! /usr/bin/env ruby
+require 'yaml'
+
+config = YAML.load_file("#{File.dirname(__FILE__)}/jslint/jslint.yml").map { |k, v| "--#{k}=#{v.inspect}" }.join(' ')
+
+cmd = "jslint #{config.to_s} #{ARGV.join(' ')}"
+puts cmd
+results = %x{#{cmd}}
+puts results
+

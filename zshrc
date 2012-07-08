@@ -18,7 +18,10 @@ source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
 
 # Customize to your needs...
-export PATH=~/bin:/opt/local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
+export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
+
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/node_modules/.bin:$PATH
 export PYTHONPATH=/usr/local/lib/python2.6/site-packages
 
 # RVM prompt
@@ -37,7 +40,7 @@ function desym
 alias myip='curl www.whatismyip.com/automation/n09230945.asp'
 export JSTESTDRIVER_HOME="${HOME}/bin/"
 
-export NODE_PATH=$NODE_PATH:/usr/local/lib/node:/usr/local/lib/node_modules
+
 export EDITOR="mvim -f"
 
 # Set VIM mode

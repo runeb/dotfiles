@@ -1,0 +1,25 @@
+[user]
+  name = Rune Botten
+  email = rbotten@gmail.com
+[credential]
+  helper = osxkeychain
+[core]
+  excludesfile = $HOME/.gitignore
+  editor = vim 
+[color]
+  diff = auto
+  branch = auto
+  status = auto
+[alias]
+  co = checkout
+  st = status
+  d = diff
+  ci = commit -v
+  cia = commit -v -a
+  co = checkout
+  cp = cherry-pick
+  l = log
+  ll = log -p
+  lm = log master..
+  llm = log -p master..
+  b = branch

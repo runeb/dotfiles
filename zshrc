@@ -81,3 +81,6 @@ center "`uptime`"
 quotes|cowsay -n -W`compute $(tput cols)/2`|lolcat
 echo
 
+source $(rvm default do rvm env --path)
+__rvm_project_rvmrc
+
